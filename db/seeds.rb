@@ -5,3 +5,13 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+require 'csv'
+
+Student.delete_all
+CSV.foreach("db/nss.csv") do |row|
+  student_data = row.split(",")
+  student_data = student_data.join(" ")
+  student_data = student_data.scan(/\w+/)
+  student_name = student_data[0..1].join(" ")
+  Student.create(:name => student_name)
+end
