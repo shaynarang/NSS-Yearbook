@@ -1,6 +1,5 @@
-<h1><%= @student.name %></h1>
-<%= image_tag "#{@student.id}.jpg", :size => "500x500" %>
-</br>
+<div id="student_photo"><%= image_tag "#{@student.id}.jpg", :size => "800x500" %></div>
+<div id="student_info"><h1><%= @student.name %></h1>
 <q>This is a quote from <%= @student.name %>.</q>
-<p>This is a bio for <%= @student.name %>. Blah. Blah. Blah.</p>
-<p><%= link_to "Home", :root %></p>
+<p>This is a bio for <%= @student.name %>. Blah. Blah. Blah.</p></div>
+<p><%= link_to "Back", students_path %></p>

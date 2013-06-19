@@ -1,0 +1,8 @@
+<% @instructors.each do |instructor| %>
+  <h1><%= instructor.name %></h1>
+  <%= image_tag "#{instructor.id}.jpg", :size => "500x500" %>
+  </br>
+  <q>This is a quote from <%= instructor.name %>.</q>
+  <p>This is a bio for <%= instructor.name %>. Blah. Blah. Blah.</p>
+  <p><%= link_to "Home", :root %></p>
+<% end %>

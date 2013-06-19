@@ -8,10 +8,19 @@
 require 'csv'
 
 Student.delete_all
-CSV.foreach("db/nss.csv") do |row|
+CSV.foreach("db/students.csv") do |row|
   student_data = row.split(",")
   student_data = student_data.join(" ")
   student_data = student_data.scan(/\w+/)
   student_name = student_data[0..1].join(" ")
   Student.create(:name => student_name)
+end
+
+Instructor.delete_all
+CSV.foreach("db/instructors.csv") do |row|
+  instructor_data = row.split(",")
+  instructor_data = instructor_data.join(" ")
+  instructor_data = instructor_data.scan(/\w+/)
+  instructor_name = instructor_data[0..1].join(" ")
+  Instructor.create(:name => instructor_name)
 end

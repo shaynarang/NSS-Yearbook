@@ -8,20 +8,27 @@
   </head>
 
   <header>
-    <section id="log_in">
-      <% unless current_user %>
-        <%= link_to "Log In", new_user_session_path %>
-      <% end %>
-    </section>
-
-    <h1>Nashville Software School Yearbook</h1>
-    <%= render 'students/form' %>
+    <h1><%= link_to "Nashville Software School Yearbook - Class of 2013", :root, :style => 'text-decoration: none' %></h1>
   </header>
 
   <body>
+    <ul id ="menu">
+      <li><button id="log_in_button" class="button"><% unless current_user %>
+        <%= link_to "Log In", new_user_session_path, :style => 'text-decoration: none' %>
+      <% end %></button></li>
+      <li><button id="instructor_button" class="button"><%= link_to "Instructors", instructors_path, :style => 'text-decoration: none' %></button></li>
+      <li><button id="student_button" class="button"><%= link_to "Students", students_path, :style => 'text-decoration: none' %></button></li>
+    </ul>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
 
-    <%= yield %>
+    <div id="wrapper">
+      <%= yield %>
+    </div>
+
   </body>
+
+  <footer>
+    A Shay Narang Production
+  </footer>
 </html>
