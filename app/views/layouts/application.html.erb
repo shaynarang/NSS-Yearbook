@@ -19,10 +19,10 @@
       <li><button id="instructor_button" class="button"><%= link_to "Instructors", instructors_path, :style => 'text-decoration: none' %></button></li>
       <li><button id="student_button" class="button"><%= link_to "Students", students_path, :style => 'text-decoration: none' %></button></li>
     </ul>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
 
     <div id="wrapper">
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
       <%= yield %>
     </div>
 

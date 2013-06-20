@@ -86,3 +86,28 @@ footer {
   clear: left;
   margin: 2% 0% 0% 42%;
 }
+
+.devise_title {
+  width: 20%;
+  box-shadow: 0px 0px 0px 5px #666 inset;
+  font-size: 180%;
+  padding: 2%;
+  text-align: center;
+  margin: 2% auto 2% auto;
+}
+
+.devise_form {
+  text-align: center;
+  font-size: 125%;
+  line-height: 125%;
+}
+
+#devise_email_label, #devise_password_label, #devise_email_field, #devise_password_field {
+  line-height: 100%;
+}
+
+.notice, .alert {
+  font-size: 150%;
+  text-align: center;
+  color: red;
+}

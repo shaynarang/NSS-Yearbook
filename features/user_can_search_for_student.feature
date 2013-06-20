@@ -6,7 +6,9 @@ Feature: User can search for student
   Scenario: Happy Path
   Given the student "Shay Narang"
   When I go to the homepage
+  And I click on "Students"
   And I fill in "Shay" for "search"
   And I press "Find Student"
+  And I click on "Shay Narang"
   Then I should see "This is a quote from Shay Narang"
   And I should see "This is a bio for Shay Narang. Blah. Blah. Blah."
