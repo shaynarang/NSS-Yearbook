@@ -1,6 +1,6 @@
 <%= form_tag students_path, :method => :get do %>
 <p>
   <%= text_field_tag :search, params[:search], :class => "input" %>
-  <%= submit_tag "Find Student", :name => nil, :class => "button" %>
+  <%= submit_tag "Find Student", :name => nil, :class => "button", :id => "find_student_button" %>
 </p>
 <% end %>

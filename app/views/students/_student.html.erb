@@ -2,5 +2,5 @@
 <div id="student_photo"><%= image_tag "students/full/#{@student.name}.jpg", :width => "100%", :height => "100%" %></div>
 <div id="student_quote">
   <q> <%= @student.quote %> </q>
-  <div id="back"><%= link_to "Back", students_path, :style => 'text-decoration: none' %></div>
 </div>
+<%= link_to "Back", students_path, :style => 'text-decoration: none', :class => "button", :id => "back_button" %>

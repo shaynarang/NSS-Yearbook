@@ -7,7 +7,7 @@
     <div class="devise_label"><%= f.label :email %></div>
     <div class="devise_field"><%= f.email_field :email, :autofocus => true, :class => "input" %></div>
     <br>
-    <div class="devise_submit_button"><%= f.submit "Send me reset password instructions", :class => "button" %></div>
+    <div><%= f.submit "Send", :class => "button", :id => "devise_submit_button" %></div>
     <% end %>
     <br>
   <%= render "devise/shared/links" %>

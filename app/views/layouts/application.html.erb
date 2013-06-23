@@ -8,30 +8,30 @@
   </head>
 
   <header>
-    <h1><%= link_to "Nashville Software School Yearbook - Class of 2013", :root, :style => 'text-decoration: none' %></h1>
+    <h1><%= link_to "Nashville Software School - Class of 2013 Yearbook", :root, :style => 'text-decoration: none' %></h1>
   </header>
 
   <body>
     <ul id ="menu">
       <% unless current_user %>
-        <li><button id="log_in_button" class="button">
-          <%= link_to "Log In", new_user_session_path, :style => 'text-decoration: none' %>
-        </button></li>
+        <li>
+          <%= link_to "Log In", new_user_session_path, :style => 'text-decoration: none', :class => "button", :id => "log_in_button" %>
+        </li>
       <% end %>
       <% if current_user %>
-         <li><button id="log_in_button" class="button">
-          <%= link_to "Log Out", destroy_user_session_path, :method => :delete, :style => 'text-decoration: none' %>
-        </button></li>
+         <li>
+          <%= link_to "Log Out", destroy_user_session_path, :method => :delete, :style => 'text-decoration: none', :class => "button", :id => "log_in_button" %>
+        </li>
       <% end %>
-      <li><button id="instructor_button" class="button">
-        <%= link_to "Instructors", instructors_path, :style => 'text-decoration: none' %>
-      </button></li>
-      <li><button id="student_button" class="button">
-        <%= link_to "Students", students_path, :style => 'text-decoration: none' %>
-      </button></li>
-      <li><button id="vote_button" class="button">
-        <%= link_to "Vote", new_ballot_path, :style => 'text-decoration: none' %>
-      </button></li>
+      <li>
+        <%= link_to "Instructors", instructors_path, :style => 'text-decoration: none', :class => "button", :id => "instructor_button" %>
+      </li>
+      <li>
+        <%= link_to "Students", students_path, :style => 'text-decoration: none', :class => "button", :id => "student_button" %>
+      </li>
+      <li>
+        <%= link_to "Vote", new_ballot_path, :style => 'text-decoration: none', :class => "button", :id => "vote_button" %>
+      </li>
     </ul>
 
     <div id="wrapper">

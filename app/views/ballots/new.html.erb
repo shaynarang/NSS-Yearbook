@@ -14,12 +14,12 @@
         <%= superlative_array[counter] %>
       </li>
       <div class="student_dropdown">
-        <%= f.collection_select(vote_number_array[counter], Student.all, :id, :name) %>
+        <%= f.collection_select(vote_number_array[counter], Student.all.sort, :id, :name) %>
       </div>
       <br>
       <hr>
       <% counter += 1 %>
     <% end %>
-  <%= f.submit "Vote", :class => "button" %>
+  <%= f.submit "Submit", :class => "button", :id => "submit_vote_button" %>
   <% end %>
 </ul>

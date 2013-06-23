@@ -1,22 +1,29 @@
 html {
   width: 100%;
   height: 100%;
-  background: black;
+  background: #634000;
 }
 
 body {
+  margin: auto;
   padding-top: 3%;
-  width: 100%;
-  height: 94%;
-  background: lightgray;
+  box-shadow: 0px 0px 0px 15px #90733F inset;
+  width: 94%;
+  height: 94.5%;
+  background: #FFA500;
   font-family: "Lucida Grande";
 }
 
+a {
+  color: #631800;
+}
+
 header {
+  padding: 1%;
   width: 80%;
   margin-left: 10%;
-  background-color: #dcdcdc;
-  box-shadow: 0px 0px 0px 5px #666 inset;
+  background-color: #FFE1AA;
+  box-shadow: 0px 0px 0px 10px #634000 inset;
 }
 
 header h1 {
@@ -36,19 +43,29 @@ header h1 {
 
 .button {
   padding: 15px;
-  background-color: #dcdcdc;
-  box-shadow: 0px 0px 40px 10px #666 inset;
-  color: #551A8B;
+  background-color: #FFC75E;
+  box-shadow: 0px 0px 0px 7.5px #634000 inset;
 }
 
 #log_in_button, #student_button, #instructor_button, #vote_button {
   font-size: 150%;
-  text-decoration: none;
-  width: 100%;
+  display: inline-block;
+  margin-bottom: 5%;
+  padding: 12.5%;
+}
+
+#submit_vote_button {
+  margin-top: 0%;
+  margin-left: 40%;
+  width: 20%;
+  font-size: 140%;
+  background-color: #FFC75E;
+  box-shadow: 0px 0px 0px 7.5px #634000 inset;
 }
 
 .input {
-  height: 40px;
+  width: 159px;
+  height: 45px;
 }
 
 #wrapper {
@@ -57,8 +74,8 @@ header h1 {
   margin-left: 28%;
   margin-top: 2%;
   padding: 2%;
-  background-color: #dcdcdc;
-  box-shadow: 0px 0px 0px 5px #666 inset;
+  background-color: #FFC75E;
+  box-shadow: 0px 0px 0px 5px #90733F inset;
 }
 
 #welcome {
@@ -68,48 +85,56 @@ header h1 {
 
 #search {
   margin-bottom: 2%;
-  margin-left: 18%;
+  margin-left: 14%;
 }
 
 #student_thumbnails, #instructor_thumbnails {
   margin-left: 4%;
 }
 
+#find_student_button, #find_instructor_button {
+  width: 25%;
+  font-size: 100%;
+}
+
 #student_photo, #instructor_photo {
   width: 50%;
   height: 80%;
-  border: 5px solid #666;
+  border: 5px solid #90733F;
   float: left;
 }
 
 #student_quote, #instructor_quote {
   width: 42%;
-  height: 75%;
+  height: 65%;
   padding: 2%;
-  box-shadow: 0px 0px 0px 5px #666 inset;
+  box-shadow: 0px 0px 0px 5px #90733F inset;
   float: right;
 }
 
-#back {
-  width: 20%;
-  margin: 10% auto;
+#back_button {
+  margin-top: 1%;
+  width: 42%;
+  height: 3%;
   padding: 2%;
-  box-shadow: 0px 0px 0px 5px #666 inset;
+  box-shadow: 0px 0px 0px 5px #90733F inset;
+  float: right;
   text-align: center;
 }
 
 footer {
   margin-top: 2%;
-  margin-left: 76%;
+  margin-left: 75%;
 }
 
 .devise_title {
   width: 20%;
-  box-shadow: 0px 0px 0px 5px #666 inset;
+  box-shadow: 0px 0px 0px 5px #634000 inset;
   font-size: 180%;
   padding: 2%;
   text-align: center;
   margin: 2% auto 2% auto;
+  background-color: #FFE1AA;
 }
 
 .devise_form {
@@ -122,22 +147,34 @@ footer {
   line-height: 100%;
 }
 
+#devise_submit_button {
+  width: 20%;
+  font-size: 140%;
+  background-color: #FFC75E;
+  box-shadow: 0px 0px 0px 7.5px #634000 inset;
+}
+
  #vote_title, #student_title, #instructor_title {
-  width: 40%;
-  box-shadow: 0px 0px 0px 5px #666 inset;
+  width: 44%;
+  box-shadow: 0px 0px 0px 5px #634000 inset;
+  background-color: #FFE1AA;
   font-size: 180%;
   padding: 2%;
   text-align: center;
-  margin: 2% auto 2% auto;
+  margin: 0% auto 2% auto;
  }
 
- #student_title, #instructor_title {
-  margin: 0% auto 2% auto;
+ #vote_title {
+  margin-bottom: 1%;
  }
 
  #instructor_quote, #student_quote {
   font-size: 150%;
   line-height: 150%;
+ }
+
+ #superlative_list {
+  line-height: 90%;
  }
 
  .superlative_list_item  {
@@ -151,8 +188,8 @@ footer {
   float: right;
  }
 
-.notice, .alert {
+ .notice, .alert {
   font-size: 150%;
   text-align: center;
   color: red;
-}
+ }
