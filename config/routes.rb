@@ -4,11 +4,15 @@ NSSYearbook::Application.routes.draw do
 
   devise_for :users
 
-  resources :home, :only => [:index, :show]
-
   resources :instructors, :only => [:index, :show]
 
   resources :students, :only => [:index, :show]
+
+  resources :ballots, :only => [:new, :create]
+
+  resources :users do
+    resources :ballots
+  end 
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

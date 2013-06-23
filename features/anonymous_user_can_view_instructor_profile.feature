@@ -1,4 +1,4 @@
-Feature: User can view instructor profile
+Feature: Anonymous user can view instructor profile
   In order to acquire instructor information
   As a former instructor or curious individual
   I want to view instructor profiles
@@ -9,4 +9,3 @@ Feature: User can view instructor profile
     And I click on "Instructors"
     And I click on "John Wark"
     Then I should see "This is a quote from John Wark"
-    And I should see "This is a bio for John Wark. Blah. Blah. Blah."

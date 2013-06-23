@@ -11,7 +11,23 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130618185800) do
+ActiveRecord::Schema.define(:version => 20130620003339) do
+
+  create_table "ballots", :force => true do |t|
+    t.integer  "vote_one"
+    t.integer  "vote_two"
+    t.integer  "vote_three"
+    t.integer  "vote_four"
+    t.integer  "vote_five"
+    t.integer  "vote_six"
+    t.integer  "vote_seven"
+    t.integer  "vote_eight"
+    t.integer  "vote_nine"
+    t.integer  "vote_ten"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.integer  "user_id"
+  end
 
   create_table "instructors", :force => true do |t|
     t.string "name"

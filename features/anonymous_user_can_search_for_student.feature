@@ -1,4 +1,4 @@
-Feature: User can search for student
+Feature: Anonymous user can search for student
   In order to view a student profile
   As a user who desires ease of use
   I want to search for a student
@@ -11,4 +11,3 @@ Feature: User can search for student
   And I press "Find Student"
   And I click on "Shay Narang"
   Then I should see "This is a quote from Shay Narang"
-  And I should see "This is a bio for Shay Narang. Blah. Blah. Blah."

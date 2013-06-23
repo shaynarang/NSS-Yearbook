@@ -1,0 +1,25 @@
+<h1 id="vote_title">Vote for Superlatives</h1>
+<br>
+<h2>Most likely to...</h2>
+<br>
+<% superlative_array = ["Remind Eliza about Book Club", "Grow a mustache", "Yell at the blonde lady", "Bring a kegerator to class", "Not be heard", "Teach the next NSS class", "Drop the F-Bomb", "Get a dish named after them at the Farmer's Market", "Be hospitalized after tripping on an extension cord", "Go on a tirade"] %>
+
+<% vote_number_array = [:vote_one, :vote_two, :vote_three, :vote_four, :vote_five, :vote_six, :vote_seven, :vote_eight, :vote_nine, :vote_ten] %>
+
+<ul id="superlative_list">
+  <%= form_for [current_user, @ballot] do |f| %>
+    <% counter = 0 %>
+    <% superlative_array.length.times do %>
+      <li class="superlative_list_item">
+        <%= superlative_array[counter] %>
+      </li>
+      <div class="student_dropdown">
+        <%= f.collection_select(vote_number_array[counter], Student.all, :id, :name) %>
+      </div>
+      <br>
+      <hr>
+      <% counter += 1 %>
+    <% end %>
+  <%= f.submit "Vote", :class => "button" %>
+  <% end %>
+</ul>

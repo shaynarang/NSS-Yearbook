@@ -1,3 +1,5 @@
-<% @instructors.each do |instructor| %>
-  <%= link_to image_tag("#{instructor.id}.jpg"), url_for(instructor), :id => "#{instructor.id}", :title => "#{instructor.name}" %>
-<% end %>
+<div id="instructor_thumbnails">
+  <% @instructors.each do |instructor| %>
+    <%= link_to (image_tag("instructors/thumbnails/#{instructor.name}.jpg", :width => "12.5%")), url_for(instructor), :id => "#{instructor.id}", :title => "#{instructor.name}" %>
+  <% end %>
+</div>

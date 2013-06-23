@@ -13,4 +13,9 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# Ignore CSV files
 /db/*.csv
+
+# Ignore image folders
+/assets/images/*

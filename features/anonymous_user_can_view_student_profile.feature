@@ -1,4 +1,4 @@
-Feature: User can view student profile
+Feature: Anonymous user can view student profile
   In order to acquire student information
   As a former student or curious individual
   I want to view student profiles
@@ -9,4 +9,3 @@ Feature: User can view student profile
     And I click on "Students"
     And I click on "Shay Narang"
     Then I should see "This is a quote from Shay Narang"
-    And I should see "This is a bio for Shay Narang. Blah. Blah. Blah."
