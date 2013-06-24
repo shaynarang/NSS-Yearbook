@@ -10,4 +10,4 @@ Feature: Anonymous user can search for instructor
   And I fill in "John" for "search"
   And I press "Find Instructor"
   And I click on "John Wark"
-  Then I should see "This is a quote from John Wark"
+  Then I should see "John Wark"

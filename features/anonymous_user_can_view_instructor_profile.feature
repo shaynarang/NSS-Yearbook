@@ -8,4 +8,4 @@ Feature: Anonymous user can view instructor profile
     When I go to the home page
     And I click on "Instructors"
     And I click on "John Wark"
-    Then I should see "This is a quote from John Wark"
+    Then I should see "John Wark"

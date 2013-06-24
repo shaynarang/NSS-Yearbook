@@ -10,4 +10,4 @@ Feature: Anonymous user can search for student
   And I fill in "Shay" for "search"
   And I press "Find Student"
   And I click on "Shay Narang"
-  Then I should see "This is a quote from Shay Narang"
+  Then I should see "Shay Narang"

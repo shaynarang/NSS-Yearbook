@@ -30,7 +30,9 @@
         <%= link_to "Students", students_path, :style => 'text-decoration: none', :class => "button", :id => "student_button" %>
       </li>
       <li>
-        <%= link_to "Vote", new_ballot_path, :style => 'text-decoration: none', :class => "button", :id => "vote_button" %>
+        <% if user_signed_in? %>
+          <%= link_to "Vote", new_ballot_path, :style => 'text-decoration: none', :class => "button", :id => "vote_button" %>
+        <% end %>
       </li>
     </ul>
 

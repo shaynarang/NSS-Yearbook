@@ -10,10 +10,6 @@ NSSYearbook::Application.routes.draw do
 
   resources :ballots, :only => [:new, :create]
 
-  resources :users do
-    resources :ballots
-  end 
-
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
