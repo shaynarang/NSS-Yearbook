@@ -47,7 +47,7 @@ header h1 {
   box-shadow: 0px 0px 0px 7.5px #634000 inset;
 }
 
-#log_in_button, #student_button, #instructor_button, #vote_button {
+#log_in_button, #student_button, #instructor_button, #vote_button, #results_button {
   font-size: 150%;
   display: inline-block;
   margin-bottom: 5%;
@@ -154,7 +154,7 @@ footer {
   box-shadow: 0px 0px 0px 7.5px #634000 inset;
 }
 
- #vote_title, #student_title, #instructor_title {
+ #vote_title, #student_title, #instructor_title, #superlatives_title {
   width: 44%;
   box-shadow: 0px 0px 0px 5px #634000 inset;
   background-color: #FFE1AA;
@@ -181,6 +181,33 @@ footer {
   width: 75%;
   float: left;
   margin-left: 5%;
+ }
+
+ #winner_list {
+  margin-left: 25%;
+ }
+
+ #winner_superlative {
+  width: 63%;
+  border-top: 5px solid #90733F;
+  border-left: 5px solid #90733F;
+  border-right: 5px solid #90733F;
+  text-align: center;
+  padding: 1%;
+ }
+
+ #winner_name {
+  width: 63%;
+  border-left: 5px solid #90733F;
+  border-right: 5px solid #90733F;
+  border-bottom: 5px solid #90733F;
+  text-align: center;
+  padding: 1%;
+ }
+
+ #winner_photo {
+  width: 65%;
+  border: 5px solid #90733F;
  }
 
  .student_dropdown {

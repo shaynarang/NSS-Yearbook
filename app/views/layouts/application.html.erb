@@ -24,15 +24,18 @@
         </li>
       <% end %>
       <li>
+        <% if user_signed_in? && current_user.voted? == false %>
+          <%= link_to "Vote", new_ballot_path, :style => 'text-decoration: none', :class => "button", :id => "vote_button" %>
+        <% end %>
+      </li>
+      <li>
         <%= link_to "Instructors", instructors_path, :style => 'text-decoration: none', :class => "button", :id => "instructor_button" %>
       </li>
       <li>
         <%= link_to "Students", students_path, :style => 'text-decoration: none', :class => "button", :id => "student_button" %>
       </li>
       <li>
-        <% if user_signed_in? %>
-          <%= link_to "Vote", new_ballot_path, :style => 'text-decoration: none', :class => "button", :id => "vote_button" %>
-        <% end %>
+        <%= link_to "Superlatives", ballots_path, :style => 'text-decoration: none', :class => "button", :id => "results_button" %>
       </li>
     </ul>
 
