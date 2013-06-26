@@ -3,4 +3,6 @@
 <div id="student_quote">
   <q> <%= @student.quote %> </q>
 </div>
+<%= link_to "Next", url_for(Student.where("id > ?", @student.id).first), :style => 'text-decoration: none', :class => "button", :id => "next_button" %>
 <%= link_to "Back", students_path, :style => 'text-decoration: none', :class => "button", :id => "back_button" %>
+<%= link_to "Previous", url_for(Student.where("id < ?", @student.id).last), :style => 'text-decoration: none', :class => "button", :id => "previous_button" %>

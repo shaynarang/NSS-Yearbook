@@ -112,14 +112,18 @@ header h1 {
   float: right;
 }
 
-#back_button {
+#next_button, #back_button, #previous_button {
   margin-top: 1%;
-  width: 42%;
+  width: 10.67%;
   height: 3%;
   padding: 2%;
   box-shadow: 0px 0px 0px 5px #90733F inset;
   float: right;
   text-align: center;
+}
+
+#previous_button, #back_button {
+  margin-right: 1%;
 }
 
 footer {
@@ -184,30 +188,16 @@ footer {
  }
 
  #winner_list {
-  margin-left: 25%;
+  text-align: center;
+  width: 100%;
  }
 
  #winner_superlative {
-  width: 63%;
-  border-top: 5px solid #90733F;
-  border-left: 5px solid #90733F;
-  border-right: 5px solid #90733F;
-  text-align: center;
-  padding: 1%;
- }
-
- #winner_name {
-  width: 63%;
-  border-left: 5px solid #90733F;
-  border-right: 5px solid #90733F;
-  border-bottom: 5px solid #90733F;
-  text-align: center;
-  padding: 1%;
- }
-
- #winner_photo {
-  width: 65%;
-  border: 5px solid #90733F;
+  width: 60%;
+  box-shadow: 0px 0px 0px 3px #634000 inset;
+  padding: 0.75%;
+  margin-left: 19%;
+  background: #FFA500;
  }
 
  .student_dropdown {

@@ -1,4 +1,4 @@
-<h1 id="superlatives_title">Superlatives</h1>
+<h1 id="superlatives_title">Most Likely To...</h1>
 
 <% superlative_array = ["Remind Eliza about Book Club", "Grow a mustache", "Yell at the blonde lady", "Bring a kegerator to class", "Not be heard", "Teach the next NSS class", "Drop the F-Bomb", "Get a dish named after them at the Farmer's Market", "Be hospitalized after tripping on an extension cord", "Go on a tirade"] %>
 <% vote_number_array = [:vote_one, :vote_two, :vote_three, :vote_four, :vote_five, :vote_six, :vote_seven, :vote_eight, :vote_nine, :vote_ten] %>
@@ -6,10 +6,8 @@
 <ul id="winner_list">
   <% counter = 0 %>
   <% vote_number_array.length.times do |vote| %>
-    <li id="winner_superlative">The most likely to <%= superlative_array[counter] %>:</li>
     <% winner = Ballot.winner(vote_number_array[counter]) %>
-    <div id="winner_photo"><%= image_tag "students/full/#{winner.name}.jpg", :width => "100%", :height => "100%" %></div>
-    <div id="winner_name"><%= link_to winner.name, url_for(winner), :style => 'text-decoration: none' %></div>
+    <li id="winner_superlative"><%= link_to "#{superlative_array[counter]}", url_for(winner), :style => 'text-decoration: none' %></li>
     </br>
     <% counter += 1 %>
   <% end %>

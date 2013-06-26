@@ -3,4 +3,6 @@
 <div id="instructor_quote">
   <q><%= @instructor.quote %></q>
 </div>
+<%= link_to "Next", url_for(Instructor.where("id > ?", @instructor.id).first), :style => 'text-decoration: none', :class => "button", :id => "next_button" %>
 <%= link_to "Back", instructors_path, :style => 'text-decoration: none', :class => "button", :id => "back_button" %>
+<%= link_to "Previous", url_for(Instructor.where("id < ?", @instructor.id).last), :style => 'text-decoration: none', :class => "button", :id => "previous_button" %>
