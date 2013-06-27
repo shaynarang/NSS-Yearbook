@@ -168,6 +168,10 @@ footer {
   margin: 0% auto 2% auto;
  }
 
+ .green {
+  background-color: green;
+ }
+
  #vote_title {
   margin-bottom: 1%;
  }
@@ -175,6 +179,13 @@ footer {
  #instructor_quote, #student_quote {
   font-size: 150%;
   line-height: 150%;
+  font-style: italic;
+  color: #631800;
+ }
+
+ #student_quote_author, #instructor_quote_author {
+  font-style: normal;
+  text-align: center;
  }
 
  #superlative_list {

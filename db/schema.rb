@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130620003339) do
+ActiveRecord::Schema.define(:version => 20130626145800) do
 
   create_table "ballots", :force => true do |t|
     t.integer  "vote_one"
@@ -32,13 +32,15 @@ ActiveRecord::Schema.define(:version => 20130620003339) do
   create_table "instructors", :force => true do |t|
     t.string "name"
     t.string "quote"
+    t.string "quote_author"
   end
 
   create_table "students", :force => true do |t|
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
     t.string   "name"
     t.string   "quote"
+    t.string   "quote_author"
   end
 
   create_table "users", :force => true do |t|

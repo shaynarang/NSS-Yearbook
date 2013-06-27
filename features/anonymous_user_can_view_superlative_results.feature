@@ -1,4 +1,3 @@
-@wip
 Feature: Anonymous user can view vote results
   In order to find out about the students' personalities
   As a curious individual
@@ -7,4 +6,4 @@ Feature: Anonymous user can view vote results
   Scenario: Happy Path
     When I go to the homepage
     And I click "Superlatives"
-    Then I should see "Most likely to"
+    Then I should see "Most Likely To"

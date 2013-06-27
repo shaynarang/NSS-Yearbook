@@ -9,18 +9,16 @@ require 'csv'
 
 Student.delete_all
 CSV.foreach("db/students.csv") do |row|
-  student_data = row.split(",")
-  student_data = student_data.join(" ")
-  student_data = student_data.scan(/\w+/)
-  student_name = student_data[0..1].join(" ")
-  Student.create(:name => student_name)
+  student_name = row[0] + " " + row[1]
+  student_quote = row[2]
+  student_quote_author = row[3]
+  Student.create(:name => student_name, :quote => student_quote, :quote_author => student_quote_author)
 end
 
 Instructor.delete_all
 CSV.foreach("db/instructors.csv") do |row|
-  instructor_data = row.split(",")
-  instructor_data = instructor_data.join(" ")
-  instructor_data = instructor_data.scan(/\w+/)
-  instructor_name = instructor_data[0..1].join(" ")
-  Instructor.create(:name => instructor_name)
+  instructor_name = row[0] + " " + row[1]
+  instructor_quote = row[2]
+  instructor_quote_author = row[3]
+  Instructor.create(:name => instructor_name, :quote => instructor_quote, :quote_author => instructor_quote_author)
 end
