@@ -86,6 +86,10 @@ header h1 {
   width: 100%;
 }
 
+#thanks {
+  text-align: center;
+}
+
 #thanks li {
   width: 30%;
   margin: 1% 0% 0% 35%;
