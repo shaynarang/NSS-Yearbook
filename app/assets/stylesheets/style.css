@@ -16,6 +16,7 @@ body {
 
 a {
   color: #631800;
+  text-decoration: none;
 }
 
 header {
@@ -78,9 +79,17 @@ header h1 {
   box-shadow: 0px 0px 0px 5px #90733F inset;
 }
 
-#welcome {
+#welcome, #thanks {
   font-size: 130%;
   line-height: 150%;
+  height: 50%;
+  width: 100%;
+}
+
+#thanks li {
+  width: 30%;
+  margin: 1% 0% 0% 35%;
+  text-align: center;
 }
 
 #search {
@@ -137,14 +146,14 @@ footer {
   font-size: 180%;
   padding: 2%;
   text-align: center;
-  margin: 2% auto 2% auto;
+  margin: 0% auto 2% auto;
   background-color: #FFE1AA;
 }
 
 .devise_form {
   text-align: center;
   font-size: 125%;
-  line-height: 125%;
+  line-height: 115%;
 }
 
 #devise_email_label, #devise_password_label, #devise_email_field, #devise_password_field {
@@ -153,7 +162,7 @@ footer {
 
 #devise_submit_button {
   width: 20%;
-  font-size: 140%;
+  font-size: 100%;
   background-color: #FFC75E;
   box-shadow: 0px 0px 0px 7.5px #634000 inset;
 }
@@ -168,8 +177,8 @@ footer {
   margin: 0% auto 2% auto;
  }
 
- .green {
-  background-color: green;
+ .alert, .notice {
+  padding-bottom: 1%;
  }
 
  #vote_title {
@@ -206,7 +215,7 @@ footer {
  #winner_superlative {
   width: 60%;
   box-shadow: 0px 0px 0px 3px #634000 inset;
-  padding: 0.75%;
+  padding: 0.6%;
   margin-left: 19%;
   background: #FFA500;
  }
