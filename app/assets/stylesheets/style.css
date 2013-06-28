@@ -72,11 +72,12 @@ header h1 {
 #wrapper {
   height: 65%;
   width: 58%;
-  margin-left: 28%;
+  margin-left: 40%;
   margin-top: 2%;
   padding: 2%;
   background-color: #FFC75E;
   box-shadow: 0px 0px 0px 5px #90733F inset;
+  overflow: hidden;
 }
 
 #welcome, #thanks {
@@ -141,7 +142,7 @@ header h1 {
 
 footer {
   margin-top: 2%;
-  margin-left: 75%;
+  margin-left: 77%;
 }
 
 .devise_title {
